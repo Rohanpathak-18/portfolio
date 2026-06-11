@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dashboard</title>
+
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+
+  <nav class="dashboard-nav">
+    <h2>Portfolio Dashboard</h2>
+
+    <button onclick="logout()">
+      Logout
+    </button>
+  </nav>
+
+  <section class="dashboard">
+
+    <!-- Statistics -->
+
+    <div class="stats">
+
+      <div class="stat-box">
+        <h2 id="projectCount">0</h2>
+        <p>Projects</p>
+      </div>
+
+      <div class="stat-box">
+        <h2 id="messageCount">0</h2>
+        <p>Messages</p>
+      </div>
+
+    </div>
+
+    <!-- Add Project -->
+
+    <div class="card">
+
+      <h3>Add Project</h3>
+
+      <form id="projectForm">
+
+        <input
+          type="text"
+          id="title"
+          placeholder="Project Title"
+          required>
+
+        <textarea
+          id="description"
+          placeholder="Project Description"
+          required></textarea>
+
+        <input
+          type="text"
+          id="githubLink"
+          placeholder="GitHub Link">
+
+        <input
+          type="text"
+          id="liveLink"
+          placeholder="Live Demo Link">
+
+        <input
+          type="file"
+          id="image">
+
+        <button type="submit">
+          Add Project
+        </button>
+
+      </form>
+
+    </div>
+
+    <!-- Add Skill -->
+
+    <div class="card">
+
+      <h3>Add Skill</h3>
+
+      <form id="skillForm">
+
+        <input
+          type="text"
+          id="skillName"
+          placeholder="Skill Name"
+          required>
+
+        <input
+          type="number"
+          id="percentage"
+          placeholder="Percentage"
+          required>
+
+        <button type="submit">
+          Add Skill
+        </button>
+
+      </form>
+
+    </div>
+
+    <!-- Projects List -->
+
+    <div class="card">
+
+      <h3>Projects</h3>
+
+      <div id="projects"></div>
+
+    </div>
+
+    <!-- Messages -->
+
+    <div class="card">
+
+      <h3>Messages</h3>
+
+      <div id="messages"></div>
+
+    </div>
+
+  </section>
+
+  <script src="/js/dashboard.js"></script>
+
+</body>
+
+</html>
