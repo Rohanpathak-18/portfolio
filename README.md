@@ -16,8 +16,6 @@ PortfolioPro is a modern full-stack portfolio website that allows developers to 
 * Education & Experience Timeline
 * Modern Glassmorphism UI
 
-## Tech Stack
-
 ### Frontend
 
 * HTML5
